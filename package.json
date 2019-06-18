@@ -1,0 +1,23 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KsxS666/webpack.git"
+  },
+  "author": "lc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KsxS666/webpack/issues"
+  },
+  "homepage": "https://github.com/KsxS666/webpack#readme",
+  "devDependencies": {
+    "file-loader": "^4.0.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  }
+}
