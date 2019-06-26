@@ -8,7 +8,7 @@ module.exports = {
   // entry: './src/index.js', //下面方式的简写
   entry: {
     dist: './src/index.js',
-    sub: './src/index.js'
+    // sub: './src/index.js'
   },
   module: {
     rules: [{
@@ -34,7 +34,7 @@ module.exports = {
         loader: 'css-loader',
         options: {
           importLoaders: 2,  //scss文件通过@import引入另外的scss文件之前仍然走sass-loader和postcss-loader
-          // modules: true
+          modules: true
         },
       },
       'sass-loader', 
@@ -42,7 +42,7 @@ module.exports = {
     }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({
+  plugins: [new HtmlWebpackPlugin({  // HtmlWebpackPlugin 会在打包结束后自动生成一个html文件，并把打包生成的js自动引入到这个html文件中
     template: 'src/index.html'
   }), new CleanWebpackPlugin()],
   output: {
