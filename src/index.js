@@ -11,6 +11,7 @@ img.src = Cjpg
 img.classList.add(style.avatar)
 var dom = document.getElementById('root')
 dom.append(img)
+console.log('lc666')
 // dom.innerHTML = '<div class="iconfont iconguanfangbanben"></div>'
 // var Cjpg = require('./cj.jpg')
 // require 需对应  module.exports

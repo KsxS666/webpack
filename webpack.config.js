@@ -4,11 +4,16 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // plugin 可以在webpack运行到某个时刻的时候，帮你做一些事情
 
 module.exports = {
-  mode: 'production', //可选development, 打包后的文件不会被压缩
+  mode: 'development', //可选development, 打包后的文件不会被压缩
+  devtool: 'source-map',
   // entry: './src/index.js', //下面方式的简写
   entry: {
     dist: './src/index.js',
     // sub: './src/index.js'
+  },
+  devServer: {
+    contentBase: './dist',
+    open: true
   },
   module: {
     rules: [{
